@@ -1,0 +1,37 @@
+.layout-type-tab_left {
+  .nova-woocommerce-tabs {
+    display: flex;
+    align-items: flex-start;
+    .tabs {
+      flex-direction: column;
+      width: 22%;
+      border: 0;
+      margin-right: rem-calc(40);
+      > .tabs-title {
+        border: solid 1px v(site-border-color);
+        margin-bottom: rem-calc(10);
+        > a {
+          padding: rem-calc(16);
+          margin: 0;
+          text-align: center;
+        }
+        &:hover,
+        &.is-active {
+          background: v(site-heading-color);
+          border-color: v(site-heading-color);
+          color: #fff;
+          > a:hover,
+          > a {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .tabs-content {
+      width: 78%;
+      .woocommerce-Reviews {
+        max-width: 100%;
+      }
+    }
+  }
+}

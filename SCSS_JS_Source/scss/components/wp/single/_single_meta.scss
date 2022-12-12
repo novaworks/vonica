@@ -1,0 +1,123 @@
+.entry-meta {
+  display: flex;
+  align-items: center;
+  font-size: rem-calc(14);
+  padding: rem-calc(15) 0;
+  border-top: solid 1px v(site-border-color);
+  a.author-all-posts {
+    position: relative;
+    top: 2px;
+  }
+
+  figure {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
+    margin-bottom: 0;
+
+    img {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+    }
+  }
+
+  .dot {
+    width: 10px;
+    height: 1px;
+    display: inline-block;
+    background: v(site-accent-color);
+    margin: 0 rem-calc(8);
+  }
+  &__item {
+    font-size: rem-calc(12);
+    a {
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    &--cat {
+      margin-left: rem-calc(8);
+      padding-left: rem-calc(8);
+      border-left: solid 1px v(site-accent-color);
+    }
+    &--tags {
+      @include tag_links;
+      align-items: center;
+      display: block;
+      @include breakpoint(large) {
+        display: flex;
+      }
+      &.for-cat {
+        margin-top: 0;
+        margin-bottom: rem-calc(4);
+         a {
+           background-color: v(site-accent-color);
+           color: #fff;
+           &:hover {
+             background-color: v(site-border-color);
+             color: v(site-heading-color);
+           }
+         }
+      }
+      span {
+        display: block;
+        margin-bottom: rem-calc(24);
+        margin-right: 0;
+        @include breakpoint(large) {
+          display: inline-block;
+          margin-bottom: 0;
+          margin-right: rem-calc(16);
+        }
+      }
+
+      a {
+        display: inline-block;
+        font-weight: 400;
+        text-decoration: none;
+      }
+    }
+  }
+  .meta-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    &__post-date {
+      display: flex;
+      align-items: center;
+      .post-date-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border: solid 1px v(site-border-color);
+        margin-right: rem-calc(10);
+        border-radius: 50%;
+
+        svg.icon-calendar-svg {
+          width: 12px;
+          height: 14px;
+          color: v(site-heading-color);
+        }
+      }
+    }
+    .nova-sharing-posts {
+      display: none;
+      @include breakpoint( medium  ) {
+        display: flex;
+      }
+      margin-left: rem-calc(20);
+    }
+  }
+}
+.entry-tags {
+  .entry-meta__item {
+    span {
+      position: relative;
+      font-size: rem-calc(16);
+      color: v(site-heading-color);
+      font-weight: 500;
+    }
+  }
+}

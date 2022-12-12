@@ -1,0 +1,102 @@
+.cart {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0;
+	width: 100%;
+	flex-wrap: wrap;
+	@include breakpoint(large) {
+		flex-direction: row;
+	}
+	&.variations_form {
+		display: block;
+	}
+	.woocommerce-product-details__add-to-cart {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		#wc-stripe-payment-request-wrapper {
+			width: 100%;
+			order: 2;
+		}
+		#wc-stripe-payment-request-button-separator {
+			width: 100%;
+			margin: 0;
+			order: 1;
+		}
+		&.stripe-button {
+			flex-wrap: wrap;
+			width: 100%;
+
+			.quantity {
+				order: -2;
+			}
+
+			.single_add_to_cart_button {
+				order: 4;
+			}
+
+			#wc-stripe-payment-request-button-separator + .single_add_to_cart_button {
+				order: -1;
+			}
+
+			#wc-stripe-payment-request-wrapper {
+				clear: both;
+				width: 100%;
+				padding-top: 0;
+				order: 1;
+			}
+
+			#wc-stripe-payment-request-button-separator {
+				margin: 0;
+				text-align: center;
+				clear: both;
+				order: 0;
+				width: 100%;
+			}
+		}
+
+		.bundle_wrap {
+			width: 100%;
+		}
+
+		.bundle_button {
+			display: flex;
+			width: 100%;
+		}
+
+		.quantity.hidden {
+			margin-left: 0;
+			height: 56px;
+			padding: 0;
+
+			& ~ button {
+				padding: 0;
+				height: rem-calc(56);
+			}
+		}
+	}
+
+	.quantity {
+		display: block;
+		position: relative;
+		text-align: center;
+		width: rem-calc(120);
+		border: solid 1px v(site-border-color);
+		input {
+			border: none;
+			font-size: rem-calc(16);
+			font-weight: 500;
+		}
+		.qty-button.inc:after,
+		.qty-button.dec:after {
+			font-size: rem-calc(12);
+		}
+	}
+	.button {
+		background-color: v(site-primary-button-color);
+
+		&:hover {
+			@include button_pattent();
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.nova-divier-line  {
+	clear: both;
+	// border-bottom: solid 1px v(site-border-color);
+	// padding-bottom: rem-calc(15);
+	margin-bottom: rem-calc(30);
+}
+div:not(.elementor-widget-container) {
+	> .product_meta {
+		font-size: rem-calc(12);
+		text-align: left;
+		padding-top: rem-calc(24);
+		margin-top: rem-calc(24);
+		margin-bottom: rem-calc(24);
+		clear: both;
+		> span {
+			display: block;
+			margin-bottom: rem-calc(10);
+			font-weight: 600;
+			> * {
+				font-weight: 400;
+			}
+		}
+		a {
+			display: inline-block;
+			margin-right: rem-calc(5);
+		}
+	}
+}

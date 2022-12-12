@@ -1,0 +1,164 @@
+// =============================================================================
+// Shop Display List
+// =============================================================================
+
+body ul.products.product-list-display {
+  flex-direction: column;
+  li.product {
+    width: 100%;
+    max-width: 100% !important;
+    @include shop_product_badges(30px, 30px);
+    &:hover {
+      box-shadow: 0 0 0 0;
+    }
+    .product-item {
+      @include breakpoint(medium) {
+        position: static;
+        display: flex;
+      }
+      &__thumbnail {
+        .product-item__thumbnail_overlay {
+          display: none;
+        }
+        @include breakpoint(medium) {
+          position: static !important;
+          width: 25%;
+        }
+      }
+      .product-item-link {
+        display: none;
+      }
+      .product-item__description .product-item__description--footer {
+        flex-direction: column;
+        align-items: flex-start;
+        .product-item__category {
+          margin-left: 0;
+        }
+      }
+      @include breakpoint(medium) {
+        .product-item__description--actions {
+          left: auto;
+          right: 30px;
+          top: 30px;
+          padding: 0;
+          transform: translate(0, 0);
+          .nova_product_quick_view_btn,
+          .nova_product_wishlist_btn,
+          .button {
+            opacity: 1 !important;
+            padding: 0;
+            box-shadow: 0 0 0;
+            width: auto;
+            height: auto;
+            transform: translate3d(0, 0, 0);
+            &:hover {
+              background-color: transparent;
+              color: inherit;
+            }
+          }
+          .button {
+            &.loading:before {
+              left: auto;
+              top: auto;
+            }
+            &.added {
+              background-color: transparent;
+              color: v(site-accent-color);
+            }
+          }
+          .added_to_cart {
+            display: none;
+          }
+          .nova_product_wishlist_btn.added {
+            background-color: transparent !important;
+            color: v(site-accent-color) !important;
+          }
+        }
+      }
+      &__description {
+        @include breakpoint(medium) {
+          padding-left: rem-calc(30);
+        }
+        &--info {
+          flex-direction: column;
+          .info-left {
+            display: flex;
+            flex-direction: column;
+            order: 1;
+            text-align: left !important;
+            width: 100% !important;
+          }
+          .info-right {
+            display: flex;
+            flex-direction: column;
+            order: 4;
+            text-align: left !important;
+            margin-top: rem-calc(12);
+            margin-left: 0 !important;
+            span.price {
+              bdi,
+              ins {
+                font-size: rem-calc(18);
+                font-weight: 600;
+              }
+            }
+          }
+          .star-rating {
+            display: flex;
+            order: 2;
+            margin: 0 !important;
+          }
+          @include breakpoint(medium) {
+            .product-short-description {
+              display: flex !important;
+              order: 3;
+            }
+          }
+        }
+      }
+    }
+    .product-item-hover {
+      display: none;
+    }
+  }
+}
+body ul.products.products-grid-1.product-list-display {
+  .product-item__description--info .info-left a.title .woocommerce-loop-product__title {
+    margin-bottom: rem-calc(10);
+  }
+  @include breakpoint(medium) {
+    .product-item .product-item__thumbnail .product-item__description--button {
+      opacity: 1;
+      width: auto;
+      left: auto;
+      bottom: auto;
+      top: 60px;
+      right: 0;
+      transform: translate(0%, 0%);
+      .button {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+}
+body ul.products.products-grid-2.product-list-display {
+  .product .product-item {
+    padding: rem-calc(15);
+  }
+  .product-item-footer {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    padding: rem-calc(20) 0;
+    @include breakpoint(medium) {
+      width: 20%;
+      padding: rem-calc(20);
+    }
+    margin-left: auto;
+    padding-right: 0;
+    align-self:center;
+    .product-item__description--button {
+      position: static;
+    }
+  }
+}

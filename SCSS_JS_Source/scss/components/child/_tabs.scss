@@ -1,0 +1,84 @@
+.kitify-tabs-style-vonica-1 {
+  .kitify-tabs__control {
+    .kitify-tabs__label-text {
+      position: relative;
+      font-size: rem-calc(20);
+      line-height: rem-calc(50);
+    }
+    &:hover,
+    &.active-tab {
+      .kitify-tabs__label-text {
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 50%;
+          background-color: v(site-border-color);
+          width: 20px;
+          height: 3px;
+          transform: translateX(-50%);
+          @include breakpoint(992px down) {
+            display: none;
+          }
+        }
+          @include breakpoint(992px down) {
+            position: static;
+          }
+      }
+    }
+  }
+  &.kitify-tabs-position-top .kitify-tabs__content-wrapper {
+     .kitify-tabs__content {
+       padding-top: rem-calc(40);
+     }
+  }
+}
+.kitify-tabs.tab-as-dropdown {
+  --kitify-dd-width: 250px;
+}
+.kitify-tabs.tab-as-dropdown
+.kitify-tabs__control-wrapper {
+  align-self: var(--kitify-tabs-h-align);
+}
+.kitify-tabs.tab-as-dropdown
+.kitify-tabs__control-wrapper
+.kitify-tabs__controls__tmp {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 40px 20px 40px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: v(site-border-color);
+}
+
+.kitify-tabs.tab-as-dropdown
+.kitify-tabs__control-wrapper
+.kitify-tabs__controls__tmp
+.dd-icon {
+  font-size: 13px;
+  padding: 4px 0px 0px 10px;
+}
+.kitify-tabs.tab-as-dropdown
+.kitify-tabs__control-wrapper
+.kitify-tabs__controls {
+  background-color: #ffffff;
+  padding: 15px 30px 15px 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.kitify-tabs.tab-as-dropdown
+.kitify-tabs__control-wrapper
+.kitify-tabs__control {
+  width: 100%;
+}
+.tab-as-dropdown
+.kitify-tabs__label-text {
+  white-space: nowrap;
+}
+.kitify-tabs.tab-as-dropdown
+.kitify-tabs__control-wrapper
+.kitify-tabs__control
+.kitify-tabs__label-text {
+  font-size: 16px;
+}

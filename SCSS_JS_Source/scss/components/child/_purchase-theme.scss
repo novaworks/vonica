@@ -1,0 +1,55 @@
+.sticky-purchase-panel {
+    position: fixed;
+    right: 10px;
+    bottom: -webkit-calc(50% - 130px);
+    bottom: -moz-calc(50% - 130px);
+    bottom: calc(50% - 130px);
+    color: #fff;
+    background: #222;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-animation: et-rtl .7s ease;
+    -moz-animation: et-rtl .7s ease;
+    -o-animation: et-rtl .7s ease;
+    animation: et-rtl .7s ease;
+    z-index: 3;
+    .mtips {
+        position: relative;
+        z-index: 1000;
+    }
+    ul {
+      padding: 17px 7px 7px;
+      list-style: none;
+      li {
+        list-style: none;
+        a {
+          font-size: 1.3rem;
+          padding: 10px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%;
+          text-align: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          color: #fff;
+          svg {
+              width: 1em;
+              height: 1em;
+          }
+        }
+      }
+      li:not(:last-child) a {
+        margin-bottom: 2px;
+      }
+    }
+}

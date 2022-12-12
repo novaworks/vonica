@@ -1,0 +1,15 @@
+.entry-content__readmore {
+  display: inline-block;
+  background-color: #fff;
+  color: v(site-heading-color);
+  font-size: rem-calc(14);
+  font-weight: 500;
+  padding: rem-calc(12) rem-calc(30);
+  border: solid 1px v(site-heading-color);
+  border-radius: 3px;
+  &:hover {
+    background-color: v(site-accent-color);
+    color: #fff;
+    border-color: v(site-accent-color);
+  }
+}

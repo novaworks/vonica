@@ -1,0 +1,260 @@
+body:not(.elementor-editor-active):not(.body-completely-loaded) {
+  .off-canvas-wrapper,
+  .elementor-kitify-nova-menu,
+  .sub-menu,
+  .elementor-kitify-nav-menu,
+  .kitify-nova-menu__mobile-trigger,
+  .count-badge,
+  .count-text,
+  .kitify-carousel,
+  img.kitify-logo__img.kitify-logo-light,
+  .elementor-location-footer {
+    content-visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .kitify-logo {
+    display: flex;
+  }
+  .kitify-logo__link {
+    display: flex;
+  }
+}
+@media(max-width: 882px){
+  body:not(.elementor-editor-active):not(.body-completely-loaded) .elementor-kitify-nova-menu {
+    display: none;
+  }
+}
+.site-wrapper {
+  overflow: hidden;
+}
+.elementor-location-header .kitify--transparency-yes {
+  @include breakpoint(large) {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+}
+.elementor-location-header .kitify--transparency-yes.elementor-section.elementor-sticky:not(.elementor-sticky--effects) {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.col-sticky > .elementor-widget-wrap {
+	position: sticky;
+	align-self: flex-start;
+	top: calc(var(--kitify-header-height) + var(--kitify-adminbar-height) + 10px);
+}
+.wvr-customer-select {
+  padding: 0 rem-calc(10) !important;
+}
+
+.kitify-sidebar {
+  &.kitify-sidebar-layout_02 {
+    .widget {
+      border: solid 1px v(site-border-color);
+      padding: rem-calc(24);
+
+      .widget-title {
+        margin-top: 0;
+        padding-top: 0;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      .novaapf-price-filter-wrapper {
+        padding: 0;
+      }
+    }
+  }
+}
+//Custom Woo Categories
+.kitify-product-categories {
+  &.custom-style-vonica-01 {
+    .kitify-custom-categories__item {
+      .kitify-custom-categories__image-wrap {
+        &:before {
+          opacity: 0;
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          content : "";
+          width: 100%;
+          height: 100%;
+          border: solid 1px v(site-heading-color);
+          border-radius: 170px 170px 0 0;
+          transform: translate3d(0, 10px, 0);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      .kitify-custom-categories__image  {
+        border-radius: 170px 170px 0 0;
+      }
+      .kitify-custom-categories__button-wrap {
+        opacity: 0;
+        transform: translate3d(0, 15px, 0);
+        transition: all 0.5s ease-in-out;
+      }
+      &:hover {
+        .kitify-custom-categories__image-wrap {
+          &:before {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        .kitify-custom-categories__button-wrap {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    }
+  }
+  &.custom-style-vonica-02 {
+    .kitify-custom-categories__item {
+      .kitify-custom-categories__image-wrap {
+        &:before {
+          opacity: 0;
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          content : "";
+          width: 100%;
+          height: 100%;
+          border: solid 1px v(site-heading-color);
+          border-radius: 170px 170px 0 0;
+          transform: translate3d(0, 10px, 0);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      .kitify-custom-categories__thumb {
+        position: relative;
+      }
+      .kitify-custom-categories__content-wrap {
+        position: relative;
+        .kitify-custom-categories__desc {
+          text-align: center;
+        }
+      }
+      .kitify-custom-categories__image  {
+        border-radius: 170px 170px 0 0;
+      }
+      .kitify-custom-categories__button-wrap {
+        opacity: 0;
+        transform: translate3d(0, 15px, 0);
+        transition: all 0.5s ease-in-out;
+      }
+      &:hover {
+        .kitify-custom-categories__image-wrap {
+          &:before {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+          }
+        }
+        .kitify-custom-categories__button-wrap {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    }
+  }
+  &.custom-style-vonica-03 {
+    .kitify-custom-categories__item {
+      .kitify-custom-categories__image-wrap {
+        &:before {
+          opacity: 0;
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          content : "";
+          width: 100%;
+          height: 100%;
+          border: solid 1px v(site-heading-color);
+          border-radius: 170px 170px 0 0;
+          transform: translate3d(0, 10px, 0);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      .kitify-custom-categories__image  {
+        border-radius: 170px 170px 0 0;
+      }
+      &:hover {
+        .kitify-custom-categories__image-wrap {
+          &:before {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+          }
+        }
+      }
+    }
+  }
+}
+//Custom Image Comparison Element
+.kitify-image-comparison {
+  div.jx-controller {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    left: -7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  div.jx-arrow {
+    display: none;
+  }
+}
+//Custom Testimonials Element
+.kitify-testimonials {
+  &.preset-type-1 {
+    @include breakpoint(large) {
+      .swiper-slide-visible {
+        opacity: 0.5;
+        &.swiper-slide-next {
+          opacity: 1;
+        }
+      }
+    }
+    .swiper-pagination-bullet {
+      background-color: v(site-accent-color);
+    }
+    .kitify-carousel__dots {
+      background-color: #fff;
+      padding: rem-calc(5) 0;
+      border-radius: 3px;
+    }
+  }
+}
+//Custom Banner Style
+.simple-style-cat {
+  .kitify-carousel__item {
+    // &:nth-child(odd) {
+    //   margin-top: 120px;
+    // }
+  }
+  .kitify-carousel__content {
+    display: flex;
+    align-items: center;
+    .kitify-carousel__item-title {
+      margin-bottom: 0;
+    }
+    .kitify-carousel__item-button {
+      margin-left: auto;
+    }
+  }
+}
+.custom-carousel-preset-style-01 {
+  .product-grid-item {
+    .product-item {
+      background: #fff;
+    }
+    &:not(.swiper-slide-active) {
+      width: 80%;
+    }
+  }
+}
+@import "tabs";
+@import "color_swatcher";
+@import "purchase-theme";
