@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Vonica\n"
-"POT-Creation-Date: 2022-10-15 12:44+0700\n"
+"POT-Creation-Date: 2022-12-12 20:34+0700\n"
 "PO-Revision-Date: 2019-10-09 09:51+0700\n"
 "Last-Translator: \n"
 "Language-Team: novawrs@gmail.com\n"
@@ -35,11 +35,11 @@ msgstr ""
 msgid "Back to Home"
 msgstr ""
 
-#: archive.php:61 index.php:57 search.php:53
+#: archive.php:47 index.php:44 search.php:38
 msgid "Older posts"
 msgstr ""
 
-#: archive.php:62 index.php:58 search.php:54
+#: archive.php:48 index.php:45 search.php:39
 msgid "Newer posts"
 msgstr ""
 
@@ -128,7 +128,6 @@ msgid "%s %s"
 msgstr ""
 
 #: functions/enqueue/google-fonts.php:26
-#: functions/enqueue/google-fonts.php:33
 msgid "on"
 msgstr ""
 
@@ -143,7 +142,6 @@ msgstr ""
 #: functions/enqueue/scripts.php:58
 #: template-parts/content/content-layout-2.php:84
 #: template-parts/content/content-layout-3.php:54
-#: template-parts/content/content.php:51
 msgid "Read more"
 msgstr ""
 
@@ -244,116 +242,152 @@ msgstr ""
 msgid "Youtube/Vimeo Video Url"
 msgstr ""
 
-#: functions/nova-elementor.php:49 functions/nova-elementor.php:59
-#: functions/nova-elementor.php:86 functions/nova-elementor.php:107
-#: functions/nova-elementor.php:125 functions/nova-elementor.php:148
-#: functions/nova-elementor.php:171 functions/nova-elementor.php:180
+#: functions/nova-elementor.php:56 functions/nova-elementor.php:66
+#: functions/nova-elementor.php:93 functions/nova-elementor.php:113
+#: functions/nova-elementor.php:132 functions/nova-elementor.php:155
+#: functions/nova-elementor.php:196 functions/nova-elementor.php:205
 #: inc/customizer/backend/header/settings.php:116
 #: inc/customizer/backend/product/index.php:84
 msgid "Default"
 msgstr ""
 
-#: functions/nova-elementor.php:50
+#: functions/nova-elementor.php:57
 msgid "Top Line"
 msgstr ""
 
-#: functions/nova-elementor.php:51
+#: functions/nova-elementor.php:58
 msgid "Bottom Line"
 msgstr ""
 
-#: functions/nova-elementor.php:60
+#: functions/nova-elementor.php:67
 msgid "Vonica"
 msgstr ""
 
-#: functions/nova-elementor.php:68 functions/nova-elementor.php:77
+#: functions/nova-elementor.php:75 functions/nova-elementor.php:84
 msgid "None"
 msgstr ""
 
-#: functions/nova-elementor.php:69 functions/nova-elementor.php:78
-#: functions/nova-elementor.php:97
+#: functions/nova-elementor.php:76 functions/nova-elementor.php:85
+#: functions/nova-elementor.php:104
 msgid "Category"
 msgstr ""
 
-#: functions/nova-elementor.php:87
+#: functions/nova-elementor.php:94
 msgid "Hidden Title"
 msgstr ""
 
-#: functions/nova-elementor.php:95
+#: functions/nova-elementor.php:102
 msgid "Banners"
 msgstr ""
 
-#: functions/nova-elementor.php:96
+#: functions/nova-elementor.php:103
 msgid "Simple"
 msgstr ""
 
-#: functions/nova-elementor.php:106 functions/nova-elementor.php:140
-#: functions/nova-elementor.php:149
+#: functions/nova-elementor.php:114 functions/nova-elementor.php:147
+#: functions/nova-elementor.php:156
 msgid "Vonica Style"
 msgstr ""
 
-#: functions/nova-elementor.php:116
+#: functions/nova-elementor.php:123 functions/nova-elementor.php:166
 msgid "Type 1"
 msgstr ""
 
-#: functions/nova-elementor.php:117
+#: functions/nova-elementor.php:124
 #: inc/customizer/backend/header/page_header.php:14
 msgid "Mini"
 msgstr ""
 
-#: functions/nova-elementor.php:126
+#: functions/nova-elementor.php:133
 msgid "Vonica 01"
 msgstr ""
 
-#: functions/nova-elementor.php:127
+#: functions/nova-elementor.php:134
 msgid "Vonica 02"
 msgstr ""
 
-#: functions/nova-elementor.php:128
+#: functions/nova-elementor.php:135
 msgid "Vonica 03"
 msgstr ""
 
-#: functions/nova-elementor.php:136
+#: functions/nova-elementor.php:143
 msgid "Grid 1"
 msgstr ""
 
-#: functions/nova-elementor.php:137
+#: functions/nova-elementor.php:144
 msgid "Grid 2"
 msgstr ""
 
-#: functions/nova-elementor.php:138
+#: functions/nova-elementor.php:145
 msgid "List 1"
 msgstr ""
 
-#: functions/nova-elementor.php:139
+#: functions/nova-elementor.php:146
 msgid "List 2"
 msgstr ""
 
+#: functions/nova-elementor.php:165
+msgid "Vonica Default"
+msgstr ""
+
+#: functions/nova-elementor.php:167
+msgid "Type 2"
+msgstr ""
+
+#: functions/nova-elementor.php:168
+msgid "Type 3"
+msgstr ""
+
+#: functions/nova-elementor.php:169
+msgid "Type 4"
+msgstr ""
+
+#: functions/nova-elementor.php:170
+msgid "Type 5"
+msgstr ""
+
+#: functions/nova-elementor.php:171
+msgid "Type 6"
+msgstr ""
+
 #: functions/nova-elementor.php:172
+msgid "Type 7"
+msgstr ""
+
+#: functions/nova-elementor.php:173
+msgid "Type 8"
+msgstr ""
+
+#: functions/nova-elementor.php:174
+msgid "Type 9"
+msgstr ""
+
+#: functions/nova-elementor.php:197
 #: inc/customizer/backend/shop/layout.php:30 inc/widgets/widget-areas.php:20
 msgid "Shop Sidebar"
 msgstr ""
 
-#: functions/nova-elementor.php:181
+#: functions/nova-elementor.php:206
 msgid "Tabs left"
 msgstr ""
 
-#: functions/nova-elementor.php:182
+#: functions/nova-elementor.php:207
 msgid "Accordion"
 msgstr ""
 
-#: functions/nova-elementor.php:222 functions/nova-elementor.php:240
+#: functions/nova-elementor.php:248 functions/nova-elementor.php:266
 msgid "Primary"
 msgstr ""
 
-#: functions/nova-elementor.php:226 functions/nova-elementor.php:244
+#: functions/nova-elementor.php:252 functions/nova-elementor.php:270
 msgid "Secondary"
 msgstr ""
 
-#: functions/nova-elementor.php:230 functions/nova-elementor.php:248
+#: functions/nova-elementor.php:256 functions/nova-elementor.php:274
 msgid "Text"
 msgstr ""
 
-#: functions/nova-elementor.php:234 functions/nova-elementor.php:252
+#: functions/nova-elementor.php:260 functions/nova-elementor.php:278
 msgid "Accent"
 msgstr ""
 
@@ -398,6 +432,22 @@ msgstr ""
 msgid "Store availability"
 msgstr ""
 
+#: functions/wc/custom.php:461
+msgid "Sold:"
+msgstr ""
+
+#: functions/wc/custom.php:463
+msgid "Sold"
+msgstr ""
+
+#: functions/wc/custom.php:476
+msgid "Initial number in stock"
+msgstr ""
+
+#: functions/wc/custom.php:478
+msgid "Required for stock progress bar option"
+msgstr ""
+
 #: functions/wc/filters.php:187
 msgid "You might like these"
 msgstr ""
@@ -407,11 +457,12 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
-#: functions/wc/wc-config.php:139 woocommerce/archive-product.php:67
+#: functions/wc/wc-config.php:140 woocommerce/archive-product.php:67
 msgid "Show"
 msgstr ""
 
 #: functions/wp/archive-title.php:22
+#: template-parts/headers/header-type-default.php:82
 msgid "Search"
 msgstr ""
 
@@ -424,45 +475,12 @@ msgstr ""
 msgid "Background Image"
 msgstr ""
 
-#: inc/customizer/backend/api/index.php:8
-msgid "API keys"
-msgstr ""
-
-#: inc/customizer/backend/api/index.php:19
-msgid "Mailchimp API"
-msgstr ""
-
-#: inc/customizer/backend/api/index.php:25
-msgid "Google API"
-msgstr ""
-
-#: inc/customizer/backend/api/index.php:31
-#: inc/customizer/backend/api/index.php:50
-msgid "Instagram Access Token"
-msgstr ""
-
-#: inc/customizer/backend/api/index.php:62
-msgid "MailChimp API key"
-msgstr ""
-
-#: inc/customizer/backend/api/index.php:71
-msgid "MailChimp list ID"
-msgstr ""
-
-#: inc/customizer/backend/api/index.php:80
-msgid "Double opt-in"
-msgstr ""
-
-#: inc/customizer/backend/api/index.php:94
-msgid "Google maps API key"
-msgstr ""
-
 #: inc/customizer/backend/blog/archives.php:9
 msgid "Wide Layout"
 msgstr ""
 
 #: inc/customizer/backend/blog/archives.php:14
-#: inc/customizer/backend/blog/archives.php:264
+#: inc/customizer/backend/blog/archives.php:124
 #: inc/customizer/backend/global/newsletter_popup.php:13
 #: inc/customizer/backend/header/index.php:38
 #: inc/customizer/backend/header/settings.php:14
@@ -482,7 +500,7 @@ msgid "Enable"
 msgstr ""
 
 #: inc/customizer/backend/blog/archives.php:15
-#: inc/customizer/backend/blog/archives.php:265
+#: inc/customizer/backend/blog/archives.php:125
 #: inc/customizer/backend/global/newsletter_popup.php:14
 #: inc/customizer/backend/header/index.php:39
 #: inc/customizer/backend/header/settings.php:15
@@ -501,97 +519,61 @@ msgstr ""
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer/backend/blog/archives.php:29
-msgid "Blog Layout"
-msgstr ""
-
-#: inc/customizer/backend/blog/archives.php:35
-msgid "Layout 01"
-msgstr ""
-
-#: inc/customizer/backend/blog/archives.php:36
-msgid "Layout 02"
-msgstr ""
-
-#: inc/customizer/backend/blog/archives.php:37
-msgid "Layout 03"
-msgstr ""
-
-#: inc/customizer/backend/blog/archives.php:38
-msgid "Layout 04"
-msgstr ""
-
-#: inc/customizer/backend/blog/archives.php:39
-msgid "Layout 05"
-msgstr ""
-
-#: inc/customizer/backend/blog/archives.php:53
-msgid "Posts per row (Desktop screen)"
-msgstr ""
-
-#: inc/customizer/backend/blog/archives.php:89
-msgid "Posts per row (Tablet screen)"
-msgstr ""
-
-#: inc/customizer/backend/blog/archives.php:125
-msgid "Posts per row (Mobile screen)"
-msgstr ""
-
-#: inc/customizer/backend/blog/archives.php:162
+#: inc/customizer/backend/blog/archives.php:22
 msgid "Show Excerpt"
 msgstr ""
 
-#: inc/customizer/backend/blog/archives.php:179
+#: inc/customizer/backend/blog/archives.php:39
 #: inc/customizer/backend/blog/single.php:9 inc/widgets/widget-areas.php:10
 msgid "Blog Sidebar"
 msgstr ""
 
-#: inc/customizer/backend/blog/archives.php:203
+#: inc/customizer/backend/blog/archives.php:63
 #: inc/customizer/backend/blog/single.php:57
 #: inc/customizer/backend/product/index.php:296
 #: inc/customizer/backend/shop/layout.php:54
 msgid "Sidebar Position"
 msgstr ""
 
-#: inc/customizer/backend/blog/archives.php:208
+#: inc/customizer/backend/blog/archives.php:68
 #: inc/customizer/backend/blog/single.php:62
 #: inc/customizer/backend/header/index.php:59
 #: inc/customizer/backend/shop/layout.php:59
 msgid "Left"
 msgstr ""
 
-#: inc/customizer/backend/blog/archives.php:209
+#: inc/customizer/backend/blog/archives.php:69
 #: inc/customizer/backend/blog/single.php:63
 #: inc/customizer/backend/header/index.php:60
 #: inc/customizer/backend/shop/layout.php:60
 msgid "Right"
 msgstr ""
 
-#: inc/customizer/backend/blog/archives.php:238
+#: inc/customizer/backend/blog/archives.php:98
 #: inc/customizer/backend/shop/layout.php:138
 msgid "Pagination"
 msgstr ""
 
-#: inc/customizer/backend/blog/archives.php:243
+#: inc/customizer/backend/blog/archives.php:103
 #: inc/customizer/backend/shop/layout.php:143
 msgid "Classic"
 msgstr ""
 
-#: inc/customizer/backend/blog/archives.php:244
+#: inc/customizer/backend/blog/archives.php:104
 #: inc/customizer/backend/shop/layout.php:144
 msgid "Load More"
 msgstr ""
 
-#: inc/customizer/backend/blog/archives.php:245
+#: inc/customizer/backend/blog/archives.php:105
 #: inc/customizer/backend/shop/layout.php:145
 msgid "Infinite"
 msgstr ""
 
-#: inc/customizer/backend/blog/archives.php:259
+#: inc/customizer/backend/blog/archives.php:119
 msgid "Limit Excerpt"
 msgstr ""
 
-#: inc/customizer/backend/blog/archives.php:280
+#: inc/customizer/backend/blog/archives.php:140
 msgid "Limit Excerpt Word"
 msgstr ""
 
@@ -640,11 +622,11 @@ msgid ""
 "Easy-peasy!"
 msgstr ""
 
-#: inc/customizer/backend/fonts/index.php:55
+#: inc/customizer/backend/fonts/index.php:49
 msgid "Body Font"
 msgstr ""
 
-#: inc/customizer/backend/fonts/index.php:80
+#: inc/customizer/backend/fonts/index.php:74
 msgid "Headings Font"
 msgstr ""
 
@@ -662,7 +644,6 @@ msgid "Copyright Text"
 msgstr ""
 
 #: inc/customizer/backend/footer/index.php:32
-#: inc/customizer/read_options.php:181
 msgid "© 2022 Vonica All rights reserved. Designed by Novaworks"
 msgstr ""
 
@@ -675,27 +656,27 @@ msgstr ""
 msgid "Site Width"
 msgstr ""
 
-#: inc/customizer/backend/global/index.php:53
+#: inc/customizer/backend/global/index.php:47
 msgid "Site Preloader"
 msgstr ""
 
-#: inc/customizer/backend/global/index.php:70
+#: inc/customizer/backend/global/index.php:58
 msgid "Site Support List"
 msgstr ""
 
-#: inc/customizer/backend/global/index.php:87
+#: inc/customizer/backend/global/index.php:69
 msgid "Chat Link"
 msgstr ""
 
-#: inc/customizer/backend/global/index.php:103
+#: inc/customizer/backend/global/index.php:85
 msgid "Phone Link"
 msgstr ""
 
-#: inc/customizer/backend/global/index.php:119
+#: inc/customizer/backend/global/index.php:101
 msgid "Email Address"
 msgstr ""
 
-#: inc/customizer/backend/global/index.php:139
+#: inc/customizer/backend/global/index.php:121
 #: inc/customizer/backend/global/newsletter_popup.php:8
 msgid "Newsletter Popup"
 msgstr ""
@@ -830,15 +811,15 @@ msgstr ""
 msgid "Page Header"
 msgstr ""
 
-#: inc/customizer/backend/header/logo.php:28
+#: inc/customizer/backend/header/logo.php:20
 msgid "Logo Light"
 msgstr ""
 
-#: inc/customizer/backend/header/logo.php:48
+#: inc/customizer/backend/header/logo.php:31
 msgid "Logo Width"
 msgstr ""
 
-#: inc/customizer/backend/header/logo.php:72
+#: inc/customizer/backend/header/logo.php:46
 msgid "Alternative Logo"
 msgstr ""
 
@@ -1430,8 +1411,16 @@ msgstr ""
 msgid "Heading Color"
 msgstr ""
 
-#: inc/customizer/read_options.php:191
+#: inc/customizer/read_options.php:177
+msgid "© 2023 Vonica All rights reserved. Designed by Novaworks"
+msgstr ""
+
+#: inc/customizer/read_options.php:187
 msgid "Browse Categories"
+msgstr ""
+
+#: inc/fonts/AddCustomFonts.php:51
+msgid "TypeKit Fonts"
 msgstr ""
 
 #: inc/menus/menus.php:10
@@ -1856,75 +1845,67 @@ msgstr ""
 msgid "A perfect plugin for Elementor"
 msgstr ""
 
-#: inc/tgm/plugins.php:26
+#: inc/tgm/plugins.php:35
 msgid "Nova Ajax Product Filters"
 msgstr ""
 
-#: inc/tgm/plugins.php:30
+#: inc/tgm/plugins.php:39
 msgid "A plugin to filter woocommerce products with AJAX request."
 msgstr ""
 
-#: inc/tgm/plugins.php:35
+#: inc/tgm/plugins.php:44
 msgid "Elementor Page Builder"
 msgstr ""
 
-#: inc/tgm/plugins.php:38
+#: inc/tgm/plugins.php:47
 msgid ""
 "The most advanced frontend drag & drop page builder. Create high-end, "
 "pixel perfect websites at record speeds. Any theme, any page, any design."
 msgstr ""
 
-#: inc/tgm/plugins.php:42
+#: inc/tgm/plugins.php:51
 msgid "WooCommerce"
 msgstr ""
 
-#: inc/tgm/plugins.php:45
+#: inc/tgm/plugins.php:54
 msgid "The eCommerce engine"
 msgstr ""
 
-#: inc/tgm/plugins.php:49
+#: inc/tgm/plugins.php:58
 msgid "Kirki"
 msgstr ""
 
-#: inc/tgm/plugins.php:55
+#: inc/tgm/plugins.php:64
 msgid "YITH WooCommerce Wishlist"
 msgstr ""
 
-#: inc/tgm/plugins.php:58
+#: inc/tgm/plugins.php:67
 msgid ""
 "YITH WooCommerce Wishlist gives your users the possibility to create, "
 "fill, manage and share their wishlists allowing you to analyze their "
 "interests and needs to improve your marketing strategies."
 msgstr ""
 
-#: inc/tgm/plugins.php:62
+#: inc/tgm/plugins.php:71
 msgid "Envato Market"
 msgstr ""
 
-#: inc/tgm/plugins.php:66
+#: inc/tgm/plugins.php:75
 msgid "Automatically update your Envato theme"
 msgstr ""
 
-#: inc/tgm/plugins.php:70
+#: inc/tgm/plugins.php:79
 msgid "Slider Revolution"
 msgstr ""
 
-#: inc/tgm/plugins.php:77
+#: inc/tgm/plugins.php:86
 msgid "Variation Swatches for WooCommerce"
 msgstr ""
 
-#: inc/tgm/plugins.php:80
+#: inc/tgm/plugins.php:89
 msgid ""
 "Beautiful colors, images and buttons variation swatches for woocommerce "
 "product attributes. Requires WooCommerce 3.2+"
-msgstr ""
-
-#: inc/tgm/plugins.php:84
-msgid "Contact Form 7"
-msgstr ""
-
-#: inc/tgm/plugins.php:87
-msgid "Just another contact form plugin. Simple but flexible."
 msgstr ""
 
 #: inc/widgets/widget-areas.php:40
@@ -1972,7 +1953,7 @@ msgid "<span>on</span> "
 msgstr ""
 
 #: template-parts/content/content-search.php:47
-#: template-parts/content/content-single.php:57
+#: template-parts/content/content-single.php:72
 msgid "<span class=\"pages\">Pages:</span>"
 msgstr ""
 
@@ -1988,8 +1969,12 @@ msgstr ""
 msgid "Next Post"
 msgstr ""
 
-#: template-parts/footers/footer-canvas.php:7
+#: template-parts/footers/footer-canvas.php:22
 msgid "Shopping Cart"
+msgstr ""
+
+#: template-parts/headers/account-menu.php:8
+msgid "My account"
 msgstr ""
 
 #: template-parts/headers/full-screen-menu.php:22

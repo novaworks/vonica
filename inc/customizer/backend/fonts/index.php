@@ -49,7 +49,7 @@ Kirki::add_field( 'vonica', array(
     'label'       => esc_html__( 'Body Font', 'vonica' ),
     'section'     => $section,
     'default'     => array(
-        'font-family'    => 'Poppins',
+        'font-family'    => 'Inter',
         'variant'        => '400',
         'subsets'        => array( 'latin-ext' ),
     ),
@@ -74,7 +74,7 @@ Kirki::add_field( 'vonica', array(
     'label'       => esc_html__( 'Headings Font', 'vonica' ),
     'section'     => $section,
     'default'     => array(
-        'font-family'    => 'kudryashev-d-contrast',
+        'font-family'    => 'timonium',
         'variant'        => '400',
         'subsets'        => array( 'latin' ),
     ),

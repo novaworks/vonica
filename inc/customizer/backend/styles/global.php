@@ -41,7 +41,7 @@ Kirki::add_field( 'vonica', array(
     'settings'    => 'secondary_color',
     'label'       => esc_html__( 'Secondary Font Color', 'vonica' ),
     'section'     => $section,
-    'default'     => '#222222',
+    'default'     => '#111111',
     'priority'    => 10,
 ) );
 
@@ -58,7 +58,7 @@ Kirki::add_field( 'vonica', array(
     'settings'    => 'accent_color',
     'label'       => esc_html__( 'Accent Color', 'vonica' ),
     'section'     => $section,
-    'default'     => '#000000',
+    'default'     => '#DD1E30',
     'priority'    => 10,
 ) );
 
@@ -110,7 +110,7 @@ Kirki::add_field( 'vonica', array(
     'settings'    => 'site_link_color',
     'label'       => esc_html__( 'Link Color', 'vonica' ),
     'section'     => $section,
-    'default'     => '#222222',
+    'default'     => '#111111',
     'priority'    => 10,
 ) );
 // ---------------------------------------------
@@ -126,7 +126,7 @@ Kirki::add_field( 'vonica', array(
     'settings'    => 'site_link_hover_color',
     'label'       => esc_html__( 'Link Hover Color', 'vonica' ),
     'section'     => $section,
-    'default'     => '#000000',
+    'default'     => '#DD1E30',
     'priority'    => 10,
 ) );
 // ---------------------------------------------
@@ -142,7 +142,7 @@ Kirki::add_field( 'vonica', array(
     'settings'    => 'primary_button_color',
     'label'       => esc_html__( 'Primary Button Color', 'vonica' ),
     'section'     => $section,
-    'default'     => '#000000',
+    'default'     => '#DD1E30',
     'priority'    => 10,
 ) );
 // ---------------------------------------------

@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_filter('kitify/adobe_fonts/id', 'vonica_kitify_adobe_fonts_id');
 if(!function_exists('vonica_kitify_adobe_fonts_id')){
     function vonica_kitify_adobe_fonts_id(){
-        return 'iiu0lcg';
+        return 'feq5khl';
     }
 }
 

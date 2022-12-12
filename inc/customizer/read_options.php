@@ -84,18 +84,18 @@
 				// Fonts
 				'font_size' 							=> '16',
 				'secondary_font_weight' 	=> '400',
-				'main_font' 							=> array('font-family' => 'Poppins',  'variant' => '400', 'subsets' => array('latin')),
-				'secondary_font' 						=> array('font-family' => 'kudryashev-d-contrast', 'variant' => '400', 'subsets' => array('latin')),
+				'main_font' 							=> array('font-family' => 'Inter',  'variant' => '400', 'subsets' => array('latin')),
+				'secondary_font' 						=> array('font-family' => 'timonium', 'variant' => '500', 'subsets' => array('latin')),
 
 				// Content Styling
 				'primary_color'             	=> '#777777',
-				'secondary_color'           	=> '#222222',
-				'accent_color' 								=> '#000000',
+				'secondary_color'           	=> '#111111',
+				'accent_color' 								=> '#DD1E30',
 				'accent_color_2' 							=> '#d9f293',
 				'border_color' 								=> '#E2E1E4',
-				'site_link_color'							=> '#222222',
-				'site_link_hover_color'				=> '#000000',
-				'primary_button_color'				=> '#000000',
+				'site_link_color'							=> '#111111',
+				'site_link_hover_color'				=> '#DD1E30',
+				'primary_button_color'				=> '#DD1E30',
 				'secondary_button_color'			=> '#222222',
 
 				//Blog Styling
@@ -174,7 +174,7 @@
 				'footer_background_color' 		=> '#000',
 				'footer_font_color' 					=> '#fff',
 				'footer_headings_color'             	=> '#fff',
-				'footer_text' 							=> esc_html__( '© 2022 Vonica All rights reserved. Designed by Novaworks', 'vonica' ),
+				'footer_text' 							=> esc_html__( '© 2023 Vonica All rights reserved. Designed by Novaworks', 'vonica' ),
 
 				//Support list
 				'site_chat_link' 						=> 'https://novaworks.ticksy.com/',
