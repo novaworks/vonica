@@ -4,6 +4,9 @@
 .site-footer {
   font-size: rem-calc(14);
   position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
   @import "footer-mixins";
   @import "footer-type-1";
 
