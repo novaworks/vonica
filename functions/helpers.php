@@ -212,24 +212,6 @@ function nova_page_need_header () {
 	return true;
 }
 //==============================================================================
-// Add tabs after add to cart button & right after Wishlist button
-//==============================================================================
-
-if( ! function_exists('nova_single_product_share') ):
-	function nova_single_product_share() {
-		global $post, $product;
-
-		$src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), false, ''); //Get the Thumbnail URL
-		$html  = '<div class="woocommerce-product-details__share-box">';
-			$html .= '<a href="//www.facebook.com/sharer/sharer.php?u=' . urlencode(get_permalink()) . '" target="_blank"><i class="fa fa-facebook"></i></a>';
-			$html .= '<a href="//twitter.com/share?url=' . urlencode(get_permalink()) . '" target="_blank"><i class="fa fa-twitter"></i></a>';
-			$html .= '<a href="//pinterest.com/pin/create/button/?url= '. get_permalink() .'&amp;media= '. esc_url($src[0]) .'&amp;description= ' . urlencode(get_the_title()) .'"><i class="fa fa-pinterest"></i></a>';
-			$html .= '</div>';
-		print wp_kses($html,'simple');
-	}
-endif;
-
-//==============================================================================
 // remove_js_autop
 //==============================================================================
 if( ! function_exists('nova_remove_js_autop') ):

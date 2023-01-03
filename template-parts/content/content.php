@@ -52,11 +52,6 @@
 					</div>
 					<?php echo nova_posted_on(); ?>
 				</div>
-				<?php
-				echo '<div class="nova-sharing-posts">';
-				nova_social_sharing(get_the_permalink(), get_the_title(), (has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full') : ''));
-				echo '</div>';
-				?>
 			</div>
 		</div>
 	</div>

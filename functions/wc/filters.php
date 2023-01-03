@@ -178,19 +178,6 @@ if ( NOVA_WOOCOMMERCE_IS_ACTIVE ) {
 
 
 	//==============================================================================
-	//	WooCommerce after cart empty products
-	//==============================================================================
-
-	if ( !function_exists('nova_cart_is_empty') ) :
-	add_filter( 'woocommerce_cart_is_empty','nova_cart_is_empty');
-	function nova_cart_is_empty() {
-		echo '<h3 class="product-suggestions-title">'. esc_html__('You might like these', 'vonica') . '</h3>';
-		echo do_shortcode('[featured_products per_page="4" columns="4"]');
-	}
-	endif;
-
-
-	//==============================================================================
 	//	WooCommerce change number of orders per page
 	//==============================================================================
 

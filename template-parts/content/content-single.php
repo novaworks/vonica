@@ -49,7 +49,7 @@
 						<?php echo nova_posted_on(); ?>
 					</div>
 						<?php
-						if( 1 == Nova_OP::getOption('blog_single_social_share') ):
+						if( 1 == Nova_OP::getOption('blog_single_social_share') && defined('NOVA_VERSION') ):
 							echo '<div class="nova-sharing-posts">';
 							nova_social_sharing(get_the_permalink(), get_the_title(), (has_post_thumbnail() ? get_the_post_thumbnail_url(get_the_ID(), 'full') : ''));
 							echo '</div>';

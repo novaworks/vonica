@@ -13,7 +13,7 @@ add_action( 'nova_qv_product_data', 	'woocommerce_template_single_price');
 add_action( 'nova_qv_product_data', 	'woocommerce_template_single_excerpt');
 add_action( 'nova_qv_product_data', 	'woocommerce_template_single_add_to_cart');
 // Social Share Products
-if ( 1 == Nova_OP::getOption('single_product_social_share') ) {
+if ( 1 == Nova_OP::getOption('single_product_social_share') && defined('NOVA_VERSION') ) {
 	add_action( 'nova_qv_product_data', 	'nova_single_product_share' );
 }
 add_action( 'nova_qv_product_data', 	'quickview_add_to_wishlist');

@@ -79,7 +79,6 @@ if('on' == Nova_OP::getOption('header_wide')) {
 								<svg class="svg-icon svg-menu-search">
 								 <use xlink:href="#vonica-search"></use>
 								</svg>
-								<span><?php esc_html_e( 'Search', 'vonica' ); ?></span>
 							</a>
 						</li>
 					<?php endif; ?>

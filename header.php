@@ -28,7 +28,6 @@
 	?>
 	<div class="site-wrapper">
 		<?php if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ):?>
-			<?php get_template_part( 'template-parts/headers/full-screen-menu' ); ?>
 			<?php get_template_part( 'template-parts/headers/search-modal' ) ?>
 			<?php if ( 1 == Nova_OP::getOption('topbar_toggle') &&  $header_template !='type-none') : ?>
 				<?php get_template_part( 'template-parts/headers/header-topbar' ) ?>

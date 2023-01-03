@@ -198,17 +198,6 @@
 					> a {
 						display: flex;
 						align-items: center;
-						padding: 12px 16px 12px 16px;
-						border: solid 1px v(site-border-color);
-						border-radius: 50px;
-						&:hover {
-							background: v(site-heading-color);
-							color: #fff;
-							border-color: v(site-heading-color);
-							> span {
-								color: #fff;
-							}
-						}
 					}
 				}
 				&.header-cart {

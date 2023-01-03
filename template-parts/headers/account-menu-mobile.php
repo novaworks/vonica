@@ -9,7 +9,7 @@
     </div>
   <?php }else { ?>
   <div class="handheld_component">
-    <a class="component-target"<?php if ( Nova_OP::getOption('header_user_action') == 'account-page' ) : ?> href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"<?php endif; ?><?php if ( Nova_OP::getOption('header_user_action') == 'modal' ) : ?> data-toggle="AcccountCanvas"<?php endif; ?>>
+    <a class="component-target" data-toggle="AcccountCanvas_Popup">
       <svg class="vonica-user-bar">
        <use xlink:href="#vonica-user-bar"></use>
       </svg>

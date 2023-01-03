@@ -16,7 +16,7 @@ add_action( 'vonica/action/wc_price_rating', 'woocommerce_template_single_price'
 add_action( 'vonica/action/wc_price_rating', 'woocommerce_template_single_rating',10 );
 
 // Social Share Products
-if ( 1 == Nova_OP::getOption('single_product_social_share') ) {
+if ( 1 == Nova_OP::getOption('single_product_social_share') && defined('NOVA_VERSION') ) {
 	add_action('woocommerce_single_product_summary', 'nova_single_product_share', 30);
 }
 // Upsells Products

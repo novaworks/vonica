@@ -78,7 +78,7 @@ if ( ! function_exists( 'nova_theme_setup' ) ) :
 		]);
 		update_option('kitify-settings', $kitsetting);
 		update_option('vonica_has_init', true);
-		update_option( 'elementor_cpt_support', array( 'page', 'post', 'nova_portfolio') );
+		update_option( 'elementor_cpt_support', array( 'page', 'post') );
 		update_option( 'elementor_page_title_selector', '.page-header' );
 		update_option( 'elementor_editor_break_lines', 1 );
 		update_option( 'elementor_space_between_widgets', '0' );
