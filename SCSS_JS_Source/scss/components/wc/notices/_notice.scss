@@ -1,6 +1,7 @@
 .woocommerce-info {
   @include site_notice(#6EBFC7, '\ea16');
   padding: rem-calc(25);
+  line-height: rem-calc(24);
 
   &:before {
     font-size: rem-calc(18);

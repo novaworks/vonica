@@ -31,15 +31,12 @@ if ( ! function_exists( 'nova_theme_setup' ) ) :
 				'kitify'    => true,
 				'kitify-woo' => [
 					'product-loop'    			=> true,
-					'stock-progress-bar'    => true,
 				],
 				'elementor'       => [
-						'ajax-templates'    			=> false,
 						'kitify-hamburger-panel'  => false,
 						'css-transform'     			=> false,
 						'floating-effects'  			=> false,
 						'wrapper-links'     			=> false,
-						'kitify-icon'     				=> true,
 						'custom-fonts'      			=> false,
 						'mega-menu'         			=> false,
 				],

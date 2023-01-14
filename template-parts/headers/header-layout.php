@@ -26,7 +26,5 @@ if(
 	?>
 </header>
 <?php
-if( !class_exists('NOVAHB', false) ){
-  get_template_part( 'template-parts/headers/header-mobiles' );
-}
+get_template_part( 'template-parts/headers/header-mobiles' );
 ?>
