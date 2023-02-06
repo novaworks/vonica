@@ -167,8 +167,10 @@ $links_list_item_margin_vertical: rem-calc(13) !default;
   position: relative;
   font-size: $md-widget-title-font;
   line-height: $global-lineheight;
+  border-bottom: solid 1px v(site-border-color);
+  padding-bottom: rem-calc(12);
   margin-bottom: rem-calc(24);
-  padding: 0;
+  text-transform: uppercase;
   cursor: pointer;
   &:after {
     position: absolute;

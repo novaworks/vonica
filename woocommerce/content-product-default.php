@@ -49,16 +49,22 @@ $class = array('product_item', 'product-grid-item', 'product');
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 
 	<div class="product-item">
-
+		<div class="product-item__badges">
+			<?php do_action( 'woocommerce_product_badges' ); ?>
+		</div>
+		<div class="product-item__description--top-actions">
+			<?php
+			if( 1 ==  Nova_OP::getOption('shop_product_wishlist_button') ):
+				do_action( 'woocommerce_shop_loop_wishlist' );
+			endif;
+			?>
+		</div>
 		<div class="product-item__thumbnail">
 						<div class="product-item__thumbnail_overlay">
 						</div>
 						<a class="product-item-link" href="<?php echo get_the_permalink() ?>"></a>
 						<div class="product-item__description--actions">
 							<?php
-							if( 1 ==  Nova_OP::getOption('shop_product_wishlist_button') ):
-								do_action( 'woocommerce_shop_loop_wishlist' );
-							endif;
 							if( 1 ==  Nova_OP::getOption('shop_product_addtocart_button') ):
 								do_action( 'woocommerce_shop_loop_add_to_cart' );
 							endif;
@@ -68,9 +74,6 @@ $class = array('product_item', 'product-grid-item', 'product');
 							?>
 						</div>
 
-			<div class="product-item__badges">
-				<?php do_action( 'woocommerce_product_badges' ); ?>
-			</div>
 			<?php do_action('nova_loop_thumbnail_start'); ?>
 				<a href="<?php echo get_the_permalink() ?>">
 					<?php do_action('nova_loop_thumbnail'); ?>

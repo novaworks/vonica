@@ -108,13 +108,18 @@ ul.products {
       @include vonica_addtocart_button('product-item__description--actions', button, 11, 16);
     }
     // Include Badges
-    @include shop_product_badges(15px, 15px);
+    @include shop_product_badges(0, 20px);
 
     .product-item {
       transition: opacity 1s ease, transform 1.5s ease;
       position: relative;
       min-height: 100%;
+      border: solid 1px v(site-border-color);
+      padding: rem-calc(20);
       overflow: hidden;
+      @include breakpoint(large) {
+        padding: rem-calc(40);
+      }
       body.shop-products-per-row-6 .shop-has-sidebar & {
         overflow: visible;
       }
@@ -136,7 +141,12 @@ ul.products {
           text-transform: uppercase;
         }
       }
-
+      &__description--top-actions {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 99;
+      }
       .product-item__thumbnail {
         position: relative;
         overflow: hidden;
@@ -173,8 +183,7 @@ ul.products {
           height: 18px;
         }
         &:hover {
-          background-color: v(site-accent-color);
-          color: #fff;
+          color: v(site-accent-color);
         }
       }
 
@@ -183,14 +192,20 @@ ul.products {
       }
 
       .product-item__description--actions .button {
-        transition: all 0.45s ease-in-out;
+        background: #f0f0f0;
+        flex-shrink: 0;
+        flex-grow: 1;
         width: auto !important;
         min-width: 145px;
         padding: 0 rem-calc(15);
+        transition: all 0.45s ease-in-out;
         .text {
           margin-left: rem-calc(5);
           font-size: rem-calc(12);
           font-weight: 500;
+        }
+        &:hover {
+          background: v(site-accent-color);
         }
       }
 
@@ -276,20 +291,25 @@ ul.products {
         display: flex;
         flex-direction: row;
         position: absolute;
+        width: 100%;
         opacity: 1;
         left: 50%;
-        bottom: 50%;
-        padding: rem-calc(15);
+        bottom: 0;
+        padding: 0;
         pointer-events: none;
         z-index: 11;
         @include global_transition;
-        transform: translate(-50%, 50%);
-
+        transform: translate(-50%, 0);
+        .nova_product_quick_view_btn {
+          background: v(site-heading-color);
+          color: #fff;
+        }
         > a {
           position: relative;
           pointer-events: auto;
-          margin-bottom: rem-calc(15);
-          border-radius: 5px;
+          &:hover {
+            color: #fff !important;
+          }
 
           &.clicked {
             &:after {

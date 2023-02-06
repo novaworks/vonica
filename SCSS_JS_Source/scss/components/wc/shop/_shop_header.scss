@@ -71,7 +71,6 @@
       .woocommerce-ordering {
         border: solid 1px v(site-border-color);
         padding: 0 rem-calc(15);
-        border-radius: 30px;
       }
       .nova-product-filter {
         display: none;
@@ -225,7 +224,6 @@
           width: 44px;
           height: 44px;
           border: solid 1px v(site-border-color);
-          border-radius: 50%;
           cursor: pointer;
           @include global-transition();
 
@@ -247,9 +245,6 @@
         }
         .shop-display-grid {
           margin-right: rem-calc(10);
-        }
-        span:last-child {
-          border-right: 0;
         }
       }
     }

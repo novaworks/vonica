@@ -31,6 +31,7 @@ if ( ! function_exists( 'nova_theme_setup' ) ) :
 				'kitify'    => true,
 				'kitify-woo' => [
 					'product-loop'    			=> true,
+					'show-cat-in-list'    	=> true,
 				],
 				'elementor'       => [
 						'kitify-hamburger-panel'  => false,
@@ -47,9 +48,7 @@ if ( ! function_exists( 'nova_theme_setup' ) ) :
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
-		if ( wp_is_mobile() ) {
-			remove_theme_support( 'wc-product-gallery-zoom' );
-		}
+		remove_theme_support( 'wc-product-gallery-zoom' );
 		if(NOVA_RWMB_IS_ACTIVE) {
 			// Enable support for Post Formats
 			add_theme_support( 'post-formats', array( 'video', 'audio', 'quote', 'link' ) );

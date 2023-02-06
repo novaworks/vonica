@@ -1,4 +1,30 @@
 body.single.single-post {
+  &.blog-sidebar-right {
+    .site-main-content {
+      padding-right: 80px;
+      border-right: solid 1px v(site-border-color);
+      @include breakpoint(1550px down) {
+        padding-right: 30px;
+      }
+      @include breakpoint(large down) {
+        padding-right: 0;
+        border: 0;
+      }
+    }
+  }
+  &.blog-sidebar-left {
+    .site-main-content {
+      padding-left: 80px;
+      border-left: solid 1px v(site-border-color);
+      @include breakpoint(1550px down) {
+        padding-left: 30px;
+      }
+      @include breakpoint(large down) {
+        padding-left: 0;
+        border: 0;
+      }
+    }
+  }
   .site-content-wrapper {
     .single_post_content {
       margin-top: rem-calc(80);

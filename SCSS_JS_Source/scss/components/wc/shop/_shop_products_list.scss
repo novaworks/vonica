@@ -12,6 +12,7 @@ body ul.products.product-list-display {
       box-shadow: 0 0 0 0;
     }
     .product-item {
+      padding: 20px;
       @include breakpoint(medium) {
         position: static;
         display: flex;
@@ -36,11 +37,17 @@ body ul.products.product-list-display {
         }
       }
       @include breakpoint(medium) {
+        .product-item__description--top-actions {
+          top: 40px;
+          right: 50px;
+        }
         .product-item__description--actions {
           left: auto;
-          right: 30px;
-          top: 30px;
+          right: 50px;
+          top: auto;
+          bottom: 40px;
           padding: 0;
+          width: auto;
           transform: translate(0, 0);
           .nova_product_quick_view_btn,
           .nova_product_wishlist_btn,
@@ -48,8 +55,6 @@ body ul.products.product-list-display {
             opacity: 1 !important;
             padding: 0;
             box-shadow: 0 0 0;
-            width: auto;
-            height: auto;
             transform: translate3d(0, 0, 0);
             &:hover {
               background-color: transparent;

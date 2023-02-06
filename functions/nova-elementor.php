@@ -64,7 +64,6 @@ if(!function_exists('vonica_kitify_add_nova_cart_style')){
     function vonica_kitify_add_nova_cart_style(){
         return [
           'default' => esc_html__( 'Default', 'vonica' ),
-          'vonica' => esc_html__( 'Vonica', 'vonica' ),
         ];
     }
 }
@@ -77,15 +76,7 @@ if(!function_exists('vonica_kitify_add_simple_style')){
         ];
     }
 }
-add_filter('kitify/banner/control/simple_style', 'vonica_kitify_add_simple_style');
-if(!function_exists('vonica_kitify_add_simple_style')){
-    function vonica_kitify_add_simple_style(){
-        return [
-          'none' => esc_html__( 'None', 'vonica' ),
-          'cat' => esc_html__( 'Category', 'vonica' ),
-        ];
-    }
-}
+
 add_filter('kitify/banner-list/preset_overlay', 'vonica_kitify_banner_list_overlay_preset');
 if(!function_exists('vonica_kitify_banner_list_overlay_preset')){
     function vonica_kitify_banner_list_overlay_preset(){
@@ -111,7 +102,6 @@ if(!function_exists('vonica_kitify_add_product_grid_style')){
     function vonica_kitify_add_product_grid_style(){
         return [
             '1' => esc_html__('Default', 'vonica'),
-            '2' => esc_html__('Vonica Style', 'vonica'),
         ];
     }
 }
