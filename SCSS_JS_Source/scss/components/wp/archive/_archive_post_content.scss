@@ -69,7 +69,7 @@
     .meta-right {
       display: flex;
       align-items: center;
-      margin-left: auto;
+      margin-left: rem-calc(15);
       &__post-date {
         display: flex;
         align-items: center;

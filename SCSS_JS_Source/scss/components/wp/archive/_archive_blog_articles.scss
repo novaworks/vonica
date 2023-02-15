@@ -76,7 +76,6 @@ article {
           font-size: rem-calc(14);
           padding: 0 rem-calc(15);
           margin-right: rem-calc(8);
-          border-radius: 3px;
           &:hover {
             background: v(site-accent-color);
             color: #fff;
@@ -93,7 +92,7 @@ article {
           margin-bottom: rem-calc(12);
           text-transform: uppercase;
           @include breakpoint( large  ) {
-            font-size: rem-calc(36);
+            font-size: rem-calc(32);
           }
         }
       }

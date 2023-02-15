@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   font-size: rem-calc(14);
-  padding: rem-calc(15) 0;
-  border-top: solid 1px v(site-border-color);
+  padding: 0 0 rem-calc(15) 0;
   a.author-all-posts {
     position: relative;
     top: 2px;
@@ -81,7 +80,7 @@
   .meta-right {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    margin-left: rem-calc(15);
     &__post-date {
       display: flex;
       align-items: center;

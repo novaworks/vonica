@@ -41,6 +41,43 @@
        padding-top: rem-calc(40);
      }
   }
+  &.kitify-tabs-position-bottom {
+    .kitify-tabs__control-wrapper {
+      width: 100%;
+    }
+    .kitify-tabs__control {
+      background-color: v(site-heading-color);
+      flex: 2 1 auto;
+      margin: 0;
+      &:not(:last-child) {
+        border-right: solid 1px #333;
+      }
+      .kitify-tabs__label {
+        width: 100%;
+      }
+      .kitify-tabs__label-text {
+        position: relative;
+        color: #fff;
+        font-family: v(site-secondary-font);
+        font-size: rem-calc(16);
+        font-weight: 500;
+        line-height: 40px;
+        text-transform: uppercase;
+      }
+      &:hover,
+      &.active-tab {
+        background-color: v(site-accent-color);
+        &:after {
+          top: -9px;
+          border-top: 0;
+          left: calc(50% - 10px);
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid v(site-accent-color);
+        }
+      }
+    }
+  }
 }
 .kitify-tabs.tab-as-dropdown {
   --kitify-dd-width: 250px;

@@ -2,79 +2,11 @@ ul.products {
   &.products-grid-2 {
     .product {
       .product-item {
-        .product-item__description-top-actions {
-          position: absolute;
-          top: 30px;
-          right: 30px;
-          z-index: 99;
-          .star-rating-wrap {
-            background: #fff;
-            padding: rem-calc(6) rem-calc(14);
-            border-radius: 20px;
-          }
-
+        .product-item__description .product-item__description--info .info-left {
+          text-align: center;
         }
-        .product-item__description {
-          position: absolute;
-          opacity: 1;
-          bottom: 0;
-          width: 100%;
-          padding: 30px;
-          z-index: 99;
-          transform: translate3d(0,0,0);
-          transition: all 0.5s ease-in-out;
-          .product-item__description--info {
-            flex-direction: column;
-            align-items: center;
-            background: #fff;
-            padding: rem-calc(20);
-            border-radius: 10px;
-            @include breakpoint(large) {
-              flex-direction: row;
-            }
-            .info-left {
-              text-align: center;
-              width: 100%;
-              @include breakpoint(large) {
-                width: 60%;
-                text-align: left;
-              }
-            }
-            .info-right {
-              width: 100%;
-              @include breakpoint(large) {
-                width: 40%;
-                text-align: right;
-              }
-            }
-            .woocommerce-loop-product__title {
-              text-align: center;
-              @include breakpoint(large) {
-                text-align: left;
-                margin-bottom: 0;
-              }
-            }
-            .price {
-              text-align: center;
-              @include breakpoint(large) {
-                text-align: right;
-              }
-            }
-            .price > .woocommerce-Price-amount {
-              @include breakpoint(large) {
-                display: inline-block;
-                padding: 8px 12px;
-                border: solid 1px v(site-border-color);
-                border-radius: 20px;
-              }
-            }
-          }
-        }
-        &:hover {
-          .product-item__description {
-            opacity: 0;
-            transform: translate3d(0,30px,0);
-          }
+        .product-item__description .product-item__description--info .info-right {
+          text-align: center;
         }
       }
     }

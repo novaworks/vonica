@@ -30,12 +30,6 @@
 		<header class="entry-header">
 			<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' ); ?>
 		</header>
-
-		<div class="entry-content">
-
-			<div><?php the_excerpt(); ?></div>
-
-		</div>
 		<div class="entry-meta">
 			<a class="author-all-posts" href="<?php echo get_author_posts_url( get_the_author_meta('ID') ) ?>">
 				<figure>
@@ -53,6 +47,11 @@
 					<?php echo nova_posted_on(); ?>
 				</div>
 			</div>
+		</div>
+		<div class="entry-content">
+
+			<div><?php the_excerpt(); ?></div>
+
 		</div>
 	</div>
 

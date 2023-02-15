@@ -14,3 +14,19 @@
     }
   }
 }
+.kitify-posts {
+  &.preset-vonica-1 {
+    .kitify-posts__item {
+      .kitify-posts__inner-box {
+        background: #fff;
+        border: solid 1px v(site-border-color);
+        .kitify-posts__thumbnail {
+            margin-bottom: 0;
+        }
+        .kitify-posts__inner-content {
+          padding: rem-calc(30);
+        }
+      }
+    }
+  }
+}

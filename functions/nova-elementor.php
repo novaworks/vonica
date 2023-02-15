@@ -102,6 +102,9 @@ if(!function_exists('vonica_kitify_add_product_grid_style')){
     function vonica_kitify_add_product_grid_style(){
         return [
             '1' => esc_html__('Default', 'vonica'),
+            '2' => esc_html__('Custom Style 01', 'vonica'),
+            '3' => esc_html__('Custom Style 02', 'vonica'),
+            '4' => esc_html__('Custom Style 03', 'vonica'),
         ];
     }
 }

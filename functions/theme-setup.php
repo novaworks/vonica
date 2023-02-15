@@ -62,6 +62,7 @@ if ( ! function_exists( 'nova_theme_setup' ) ) :
 		));
 		//Image size
 		add_image_size( 'nova-image-square', 1100, 1100, true );
+		add_image_size( 'vonica-product-03', 600, 345, true );
 		//Kitify
 
 		$kitsetting = get_option('kitify-settings', []);

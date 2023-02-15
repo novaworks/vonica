@@ -1,0 +1,26 @@
+ul.products {
+  &.products-grid-4 {
+    .product {
+      .product-item {
+        .product-item__description--top-actions {
+          background-color: v(site-accent-color);
+          padding: 0 rem-calc(10);
+          border-radius: 30px;
+          .price {
+            font-size: rem-calc(14);
+            color: #fff;
+            del {
+              color: #fff;
+            }
+          }
+        }
+        .product-item__description .product-item__description--info .info-left {
+          text-align: center;
+        }
+        .product-item__description .product-item__description--info .info-right {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
