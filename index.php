@@ -23,7 +23,7 @@
 				<?php endif; ?>
 
 				<div class="cell small-12 <?php echo ( 1 == Nova_OP::getOption('blog_sidebar') && is_active_sidebar( 'blog-widget-area' ) ) ? 'large-8 xlarge-9' : 'large-12' ?> site-main-content-wrapper">
-					<div class="site-main-content">
+					<div class="site-main-content<?php if (is_active_sidebar( 'blog-widget-area' )) : ?> has-sidebar<?php endif; ?>">
 							<?php get_template_part( 'template-parts/global/page-header' ) ?>
 						<div class="blog-articles">
 							<?php

@@ -73,6 +73,7 @@ if('on' == Nova_OP::getOption('header_wide')) {
 			<div class="nova-header__right-action">
 				<?php if( 0 == Nova_OP::getOption('icons_on_topbar') ):?>
 				<ul class="actions">
+					<?php get_template_part( 'template-parts/headers/account-menu' ) ?>
 					<?php if ( Nova_OP::getOption('header_search_toggle') == 1 ) : ?>
 						<li class="header-search">
 							<a id="js_header_search_modal" href="#headerSearchModal">
@@ -82,7 +83,6 @@ if('on' == Nova_OP::getOption('header_wide')) {
 							</a>
 						</li>
 					<?php endif; ?>
-					<?php get_template_part( 'template-parts/headers/account-menu' ) ?>
 					<?php if ( NOVA_WISHLIST_IS_ACTIVE && Nova_OP::getOption('header_wishlist') == 1 ) : ?>
 					  <li class="header-wishlist">
 					    <a href="<?php echo esc_url(YITH_WCWL()->get_wishlist_url()); ?>">
