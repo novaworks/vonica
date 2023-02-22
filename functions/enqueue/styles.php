@@ -17,7 +17,7 @@ function nova_styles() {
 	wp_enqueue_style('nova-vonica-layout', get_template_directory_uri() . '/assets/css/layout.css', NULL, $theme_version, 'all');
 	wp_enqueue_style('nova-vonica-styles', get_template_directory_uri() . '/assets/css/app.css', NULL, $theme_version, 'all');
 	wp_register_style('fancybox', get_template_directory_uri() . '/assets/vendor/fancybox/jquery.fancybox.min.css', NULL, '3.5.7', 'all');
-	wp_enqueue_style('custom-typekit-css','https://use.typekit.net/'.$adobe_font_id.'.css', NULL, $theme_version, 'all');
+	wp_enqueue_style('typekit','https://use.typekit.net/'.$adobe_font_id.'.css', NULL, $theme_version, 'all');
 
 	if ( ! empty( Nova_OP::getOption('page_404_bg') ) ) :
 		$bg_img_404 = Nova_OP::getOption('page_404_bg');
